@@ -1,0 +1,8 @@
+.DS*
+build
+*.app
+*.xcode
+*.xcodeproj
+moc_*
+Info.plist
+
