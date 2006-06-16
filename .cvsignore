@@ -5,4 +5,5 @@ build
 *.xcodeproj
 moc_*
 Info.plist
+Makefile
 
