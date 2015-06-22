@@ -14,8 +14,8 @@
 
 #include "drawarea.h"
 
-DrawArea::DrawArea(QWidget* parent, const char*name)
-	: SimpleGraph(parent, name)
+DrawArea::DrawArea(QWidget* parent)
+	: SimpleGraph(parent)
 {
 	setPalette(QPalette(QColor(250,250,250)));
 

@@ -10,15 +10,15 @@
 #include <QPaintEvent>
 #include "simplegraph.h"
 
-typedef enum PlotType {
+typedef enum {
 	PLOT_NEGATIVE, PLOT_POSITIVE, PLOT_INDEPENDENT, PLOT_ALT
-};
+} PlotType;
 
 class DrawArea : public SimpleGraph
 {
 	Q_OBJECT
 public:
-	DrawArea(QWidget* parent=0, const char*name=0);
+	DrawArea(QWidget* parent=0);
 
 public slots:
 	void drawGraph(QPainter&p);

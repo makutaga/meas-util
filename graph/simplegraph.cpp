@@ -8,8 +8,8 @@
 #include <math.h>
 
 
-SimpleGraph::SimpleGraph(QWidget* parent, const char* name)
-	: QWidget(parent, name)
+SimpleGraph::SimpleGraph(QWidget* parent)
+	: QWidget(parent)
 {
 	axis = parent->rect();
 

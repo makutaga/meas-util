@@ -14,7 +14,7 @@ class SimpleGraph : public QWidget
 {
 	Q_OBJECT
 public:
-	SimpleGraph(QWidget* parent=0, const char* name=0);
+	SimpleGraph(QWidget* parent=0);
 	virtual void setPlotRange(double xx1, double yy1, double xx2, double yy2);
 	virtual int pixX(double vx) {
 		return axis.left() + int((vx - x1) * ppvx);

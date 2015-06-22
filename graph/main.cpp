@@ -19,12 +19,12 @@
 class MyWidget : public QWidget
 {
 public:
-	MyWidget(QWidget* parent=0, const char* name=0);
+	MyWidget(QWidget* parent=0);
 
 };
 
-MyWidget::MyWidget(QWidget* parent, const char* name)
-	: QWidget(parent, name)
+MyWidget::MyWidget(QWidget* parent)
+	: QWidget(parent)
 {
 	QVBoxLayout* topLayout = new QVBoxLayout(this);
 	topLayout->setMargin(0);
@@ -37,7 +37,7 @@ MyWidget::MyWidget(QWidget* parent, const char* name)
 	topLayout->addWidget(cnt);
 
 	// second row
-	DrawArea* darea = new DrawArea(this, "drawarea");
+	DrawArea* darea = new DrawArea(this);
 	topLayout->addWidget(darea, 1);
 	darea->changeNumber(100);
 	darea->changeSD(0.5);
@@ -61,8 +61,8 @@ main(int argc, char* argv[])
 
 	MyWidget w;
 	w.setGeometry(100, 100, 640, 480);
-	w.setCaption("graph");
-	a.setMainWidget(&w);
+//	w.setCaption("graph");
+//	a.setMainWidget(&w);
 	w.show();
 	return a.exec();
 
