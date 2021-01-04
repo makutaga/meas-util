@@ -6,6 +6,8 @@
 #include "control.h"
 #include "field.h"
 
+#include <QVBoxLayout>
+
 AppWidget::AppWidget(QWidget* parent)
 	:QWidget(parent)
 {

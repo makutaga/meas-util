@@ -8,3 +8,4 @@ HEADERS += control.h drawarea.h simplegraph.h
 SOURCES += control.cpp drawarea.cpp main.cpp simplegraph.cpp
 #The following line was inserted by qt3to4
 #QT +=  qt3support 
+QT += widgets

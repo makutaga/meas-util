@@ -5,8 +5,9 @@
 #ifndef _HIST_H_
 #define _HIST_H_
 
-#include <QtGui>
+//#include <QtGui>
 #include "graphproperty.h"
+#include <QFrame>
 
 class Histgram : public QFrame
 {

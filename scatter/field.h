@@ -4,7 +4,9 @@
 
 #ifndef _FIELD_H_
 #define _FIELD_H_
-#include <QtGui>
+//#include <QtGui>
+
+#include <QWidget>
 
 #include "graphproperty.h"
 

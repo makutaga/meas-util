@@ -6,6 +6,8 @@
 #include <math.h>
 #include <stdlib.h>
 
+#include <QPainter>
+
 Histgram::Histgram(QWidget*parent)
 	: QFrame(parent)
 {

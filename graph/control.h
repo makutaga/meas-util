@@ -5,8 +5,8 @@
 #ifndef _CONTROL_H_
 
 #include <QWidget>
-#include <qstring.h>
-#include <qlabel.h>
+#include <QString>
+#include <QLabel>
 #include <math.h>
 
 class Control : public QWidget

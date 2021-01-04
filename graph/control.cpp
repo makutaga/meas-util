@@ -2,12 +2,19 @@
 	$Id: control.cpp,v 1.1 2006/06/16 02:45:38 cvs Exp $
 */
 
-#include <qapplication.h>
-#include <qpushbutton.h>
-#include <qslider.h>
-#include <qlabel.h>
+#include <QApplication>
+#include <QPushButton>
+#include <QSlider>
+#include <QLabel>
 #include <QHBoxLayout>
 #include "control.h"
+
+//#include <qapplication.h>
+//#include <qpushbutton.h>
+//#include <qslider.h>
+//#include <qlabel.h>
+//#include <QHBoxLayout>
+//#include "control.h"
 
 Control::Control(QWidget* parent)
 {

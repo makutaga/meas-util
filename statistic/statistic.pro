@@ -4,6 +4,7 @@ TEMPLATE = app
 TARGET += 
 DEPENDPATH += .
 INCLUDEPATH += .
+QT += widgets
 
 # Input
 HEADERS += \

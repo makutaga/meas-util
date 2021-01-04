@@ -5,6 +5,10 @@
 
 #include "control.h"
 
+#include <QHBoxLayout>
+#include <QPushButton>
+#include <QCheckBox>
+
 ControlPanel::ControlPanel(QWidget* parent)
 	:QWidget(parent)
 {

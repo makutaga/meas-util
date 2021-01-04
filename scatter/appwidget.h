@@ -4,7 +4,8 @@
 
 #ifndef _APPLICATION_H_
 
-#include <QtGui>
+//#include <QtGui>
+#include <QWidget>
 
 class AppWidget : public QWidget
 {

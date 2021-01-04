@@ -6,6 +6,8 @@
 #include "field.h"
 #include "hist.h"
 
+#include <QGridLayout>
+
 Field::Field(QWidget* parent)
 	: QWidget(parent)
 {

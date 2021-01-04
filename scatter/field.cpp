@@ -4,6 +4,8 @@
 
 #include <math.h>
 #include "field.h"
+#include <QPainter>
+#include <QMouseEvent>
 
 Field::Field(QWidget* parent)
 	: QWidget(parent)

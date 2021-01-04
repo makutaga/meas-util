@@ -5,7 +5,8 @@
 
 #ifndef _CONTROL_H_
 #define _CONTROL_H_
-#include <QtGui>
+//#include <QtGui>
+#include <QWidget>
 
 class ControlPanel : public QWidget
 {
