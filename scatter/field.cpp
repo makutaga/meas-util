@@ -96,7 +96,7 @@ Field::drawPoints(QPainter&p)
 	QListIterator<QPointF> i(ptlist);
 
 	QPen pen(Qt::red);
-	pen.setWidth(5);
+	pen.setWidth(7);
 	p.setPen(pen);
 	
 	QPointF val_pt, pt;
@@ -190,14 +190,15 @@ Field::drawLagrange(QPainter&p)
 	if (ptlist.count() < 2 || enable_lagrange == false) {
 		return;
 	}
-	QPen pen(Qt::green);
+	// QPen pen(Qt::green);
+	QPen pen(QColor(92, 128, 0));
 	pen.setWidth(3);
 	p.setPen(pen);
 	
 	double x, y;
 	double xmin = gprop.getMinX();
 	double xmax = gprop.getMaxX();
-	double xstep = 10 / gprop.getPixelPerValueX();
+	double xstep = 5 / gprop.getPixelPerValueX();
 	int npts = int((xmax - xmin) / xstep);
 	pt_lag = new QPointF [npts];
 	int npts_val = ptlist.count();
