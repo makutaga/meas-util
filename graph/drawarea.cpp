@@ -30,6 +30,8 @@ DrawArea::DrawArea(QWidget* parent)
 
 	fontsize_rho = 24;
 	font_rho = QFont("Courier", fontsize_rho, QFont::Bold);
+
+	pointsize = 4;
 }
 
 void
@@ -43,7 +45,7 @@ DrawArea::drawGraph(QPainter&p)
 //	relayout();
 	clearPlot(p);
 	drawAxis(p);
-	pen.setWidth(3);
+	pen.setWidth(pointsize);
 	p.setPen(pen);
 	for (int i=0; i < nsamples; i ++) {
 		pt = QPointF(pixX(dat_x[i]), pixY(dat_y[i]));

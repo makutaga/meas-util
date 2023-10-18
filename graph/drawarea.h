@@ -62,6 +62,7 @@ private:
 	double average(int n, double *dat);
 	int fontsize_rho;
 	QFont font_rho;
+	int pointsize;
 };
 
 #define _DRAW_AREA_

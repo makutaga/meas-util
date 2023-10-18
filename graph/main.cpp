@@ -50,7 +50,6 @@ MyWidget::MyWidget(QWidget* parent)
 	connect(cnt, SIGNAL(negaEvent()), darea, SLOT(setNegative()));
 	connect(cnt, SIGNAL(indEvent()), darea, SLOT(setIndependent()));
 	connect(cnt, SIGNAL(altEvent()), darea, SLOT(setAlt()));
-
 }
 
 
