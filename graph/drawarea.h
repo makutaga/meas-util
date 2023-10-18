@@ -60,6 +60,8 @@ private:
 	PlotType plot_type;
 	double rho();
 	double average(int n, double *dat);
+	int fontsize_rho;
+	QFont font_rho;
 };
 
 #define _DRAW_AREA_

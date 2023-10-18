@@ -27,6 +27,9 @@ DrawArea::DrawArea(QWidget* parent)
 	sd = 1;
 	prefer_range = 5;
 	changeNumber(1);
+
+	fontsize_rho = 24;
+	font_rho = QFont("Courier", fontsize_rho, QFont::Bold);
 }
 
 void
@@ -47,8 +50,9 @@ DrawArea::drawGraph(QPainter&p)
 		p.drawPoint(pt);
 	}
 
-	rstr.sprintf("rho = %f", rho());
-	p.drawText(10, 20, rstr);
+	rstr.sprintf("rho = %8.5f", rho());
+	p.setFont(font_rho);
+	p.drawText(10, fontsize_rho, rstr);
 }
 
 void
