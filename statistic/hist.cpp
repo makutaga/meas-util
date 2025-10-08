@@ -59,8 +59,8 @@ Histgram::drawAxis(QPainter&p)
 	p.drawLine(xaxis);
 	p.drawLine(yaxis);
 	
-	QString save = QString::asprintf("ave. = %6.3f", s_ave);
-	QString ssd  = QString::asprintf("sd.  = %6.3f", s_sd);
+	QString save = QString("ave. = %1").arg(s_ave);
+	QString ssd  = QString("sd.  = %1").arg(s_sd);
 	QString smax  = QString("%1").arg(hist_max_freq);
 	p.drawText(0, 12, save);
 	p.drawText(0, 24, ssd);

@@ -27,8 +27,7 @@ MyWidget::MyWidget(QWidget* parent)
 	: QWidget(parent)
 {
 	QVBoxLayout* topLayout = new QVBoxLayout(this);
-	// topLayout->setMargin(0);
-	topLayout->setContentsMargins(0, 0, 0, 0);
+	topLayout->setMargin(0);
 	topLayout->setSpacing(0);
 	setMinimumSize(640, 480);
 	setMaximumSize(1280, 1000);

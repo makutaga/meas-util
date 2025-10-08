@@ -55,8 +55,7 @@ Control::Control(QWidget* parent)
 
 	QHBoxLayout* l = new QHBoxLayout(this);
 	l->setSpacing(0);
-	// l->setMargin(0);
-	l->setContentsMargins(0, 0, 0, 0);
+	l->setMargin(0);
 //	l->addWidget(quit);
 //	l->addWidget(run);
 	l->addWidget(posi);
