@@ -18,15 +18,13 @@ public:
 public slots:
 	void change_SD(int n) {
 		sd = double(n) / 100.0;
-		QString l;
-		l.sprintf("%f", sd);
+		QString l = QString::asprintf("%5.3f", sd);
 		lbl_d->setText(l);
 		emit changeSD(sd);
 	}
 	void change_num(int n) {
 		num = int(pow(10, double(n) / 100));
-		QString l;
-		l.sprintf("%d", num);
+		QString l = QString::asprintf("%5d", num);
 		lbl->setText(l);
 		emit changeNumber(num);
 	}

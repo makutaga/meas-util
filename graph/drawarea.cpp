@@ -52,7 +52,8 @@ DrawArea::drawGraph(QPainter&p)
 		p.drawPoint(pt);
 	}
 
-	rstr.sprintf("rho = %8.5f", rho());
+	rstr = QString::asprintf("rho = %7.4f", rho());
+	// QTextStream(&rstr) << "rho = " << qSetFieldWidth(4) << rho();
 	p.setFont(font_rho);
 	p.drawText(10, fontsize_rho, rstr);
 }
